@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Proxar — Your Invisible Shield on the Road</title>
-<meta name="description" content="Real-time proximity alerts between drivers and cyclists. Free. Always. Download Proxar on the App Store.">
+<meta name="description" content="Real-time proximity alerts between drivers and cyclists. Download Proxar on the App Store.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
@@ -38,7 +38,6 @@
     cursor: none;
   }
 
-  /* Custom cursor */
   .cursor {
     width: 8px; height: 8px;
     background: var(--blue);
@@ -60,7 +59,6 @@
     transform: translate(-50%, -50%);
   }
 
-  /* Nav */
   nav {
     position: fixed; top: 0; left: 0; right: 0; z-index: 100;
     padding: 24px 48px;
@@ -97,7 +95,6 @@
   }
   .nav-cta:hover { opacity: 0.85; }
 
-  /* Hero */
   .hero {
     min-height: 100vh;
     display: flex; flex-direction: column;
@@ -108,7 +105,6 @@
     overflow: hidden;
   }
 
-  /* Animated grid background */
   .hero-grid {
     position: absolute; inset: 0;
     background-image:
@@ -118,7 +114,6 @@
     mask-image: radial-gradient(ellipse at center, black 20%, transparent 80%);
   }
 
-  /* Glow orbs */
   .orb {
     position: absolute;
     border-radius: 50%;
@@ -237,7 +232,6 @@
     to { opacity: 1; transform: translateY(0); }
   }
 
-  /* Section base */
   section { padding: 120px 24px; }
   .container { max-width: 1100px; margin: 0 auto; }
 
@@ -264,7 +258,6 @@
     font-weight: 300;
   }
 
-  /* How it works */
   .how { background: var(--bg2); }
   .steps {
     display: grid;
@@ -312,7 +305,6 @@
   }
   .step p { font-size: 15px; color: var(--gray); line-height: 1.7; font-weight: 300; }
 
-  /* Modes */
   .modes-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
@@ -343,7 +335,6 @@
   }
   .mode-desc { font-size: 12px; color: var(--gray); line-height: 1.5; }
 
-  /* Features */
   .features-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -373,7 +364,6 @@
   }
   .feature p { font-size: 14px; color: var(--gray); line-height: 1.7; font-weight: 300; }
 
-  /* Privacy */
   .privacy { background: var(--bg2); }
   .privacy-cards {
     display: grid;
@@ -395,7 +385,6 @@
   }
   .privacy-card p { font-size: 14px; color: var(--gray); line-height: 1.7; font-weight: 300; }
 
-  /* CTA */
   .cta-section {
     text-align: center;
     padding: 120px 24px;
@@ -423,20 +412,7 @@
     max-width: 480px; margin: 0 auto 48px;
     line-height: 1.7; font-weight: 300;
   }
-  .free-badge {
-    display: inline-block;
-    background: rgba(34,197,94,0.1);
-    border: 1px solid rgba(34,197,94,0.2);
-    color: var(--green);
-    padding: 6px 14px;
-    border-radius: 100px;
-    font-size: 12px; font-weight: 600;
-    letter-spacing: 1px;
-    text-transform: uppercase;
-    margin-bottom: 24px;
-  }
 
-  /* Footer */
   footer {
     border-top: 1px solid var(--border);
     padding: 48px;
@@ -457,7 +433,6 @@
   .footer-links a:hover { color: var(--white); }
   .footer-copy { color: var(--gray); font-size: 13px; }
 
-  /* Apple badge */
   .apple-badge {
     display: inline-flex; align-items: center; gap: 12px;
     background: var(--white);
@@ -473,7 +448,6 @@
   .apple-badge-small { font-size: 10px; color: #666; }
   .apple-badge-large { font-size: 16px; font-weight: 700; font-family: 'Syne', sans-serif; }
 
-  /* Radar animation */
   .radar-demo {
     width: 280px; height: 280px;
     position: relative;
@@ -486,7 +460,7 @@
     top: 50%; left: 50%;
     transform: translate(-50%, -50%);
   }
-.radar-sweep {
+  .radar-sweep {
     position: absolute;
     width: 100%; height: 100%;
     top: 0; left: 0;
@@ -494,7 +468,7 @@
     background: conic-gradient(from 0deg, transparent 0deg, rgba(59,130,246,0.25) 30deg, transparent 90deg);
     animation: sweep 3s linear infinite;
     border-radius: 50%;
-}
+  }
   @keyframes sweep { from { transform: rotate(0deg); } to { transform: rotate(360deg); } }
   .radar-center {
     position: absolute;
@@ -517,7 +491,6 @@
   .dot-2 { background: var(--pink); bottom: 30%; right: 20%; animation-delay: 0.5s; }
   .dot-3 { background: var(--yellow); bottom: 20%; left: 30%; animation-delay: 1s; }
 
-  /* Responsive */
   @media (max-width: 768px) {
     nav { padding: 20px 24px; }
     .nav-links { display: none; }
@@ -526,7 +499,6 @@
     .footer-links { flex-wrap: wrap; justify-content: center; }
   }
 
-  /* Scroll reveal */
   .reveal { opacity: 0; transform: translateY(32px); transition: opacity 0.6s ease, transform 0.6s ease; }
   .reveal.visible { opacity: 1; transform: translateY(0); }
 </style>
@@ -542,11 +514,10 @@
     <a href="#how">How it works</a>
     <a href="#modes">Modes</a>
     <a href="#privacy">Privacy</a>
-    <a href="#download" class="nav-cta">Download Free</a>
+    <a href="#download" class="nav-cta">Download</a>
   </div>
 </nav>
 
-<!-- HERO -->
 <section class="hero">
   <div class="hero-grid"></div>
   <div class="orb orb-1"></div>
@@ -560,7 +531,7 @@
 
   <h1>Your invisible<br><em>shield</em> on<br>the <span class="blue">road.</span></h1>
 
-  <p class="hero-sub">Real-time proximity alerts between drivers and cyclists. Seven vehicle modes. Always free. No subscriptions, no ads.</p>
+  <p class="hero-sub">Real-time proximity alerts between drivers and cyclists. Seven vehicle modes. Built for safer roads.</p>
 
   <div class="hero-actions">
     <a href="#download" class="btn-primary">
@@ -582,12 +553,11 @@
       <div class="stat-label">Default alert radius</div>
     </div>
     <div class="stat">
-      <div class="stat-num">$<span>0</span></div>
-      <div class="stat-label">Forever free</div>
+      <div class="stat-num">24<span>/7</span></div>
+      <div class="stat-label">Always scanning</div>
     </div>
   </div>
 
-  <!-- Radar animation -->
   <div class="radar-demo">
     <div class="radar-ring" style="width:280px;height:280px;"></div>
     <div class="radar-ring" style="width:186px;height:186px;"></div>
@@ -600,7 +570,6 @@
   </div>
 </section>
 
-<!-- HOW IT WORKS -->
 <section class="how" id="how">
   <div class="container">
     <div class="reveal">
@@ -631,7 +600,6 @@
   </div>
 </section>
 
-<!-- MODES -->
 <section id="modes">
   <div class="container">
     <div class="reveal">
@@ -679,7 +647,6 @@
   </div>
 </section>
 
-<!-- FEATURES -->
 <section style="background:var(--bg2);">
   <div class="container">
     <div class="reveal">
@@ -714,14 +681,13 @@
       </div>
       <div class="feature reveal">
         <div class="feature-icon">🌙</div>
-        <h3>Light & dark mode</h3>
+        <h3>Light and dark mode</h3>
         <p>Proxar adapts to your system appearance. The dark radar interface is designed for night driving.</p>
       </div>
     </div>
   </div>
 </section>
 
-<!-- PRIVACY -->
 <section class="privacy" id="privacy">
   <div class="container">
     <div class="reveal">
@@ -740,7 +706,7 @@
       </div>
       <div class="privacy-card reveal">
         <h4><span style="color:var(--green);">🔒</span> No ads. No tracking.</h4>
-        <p>Proxar is completely free with no advertising network, no behavioral tracking, and no data sold to third parties.</p>
+        <p>No advertising network, no behavioral tracking, and no data sold to third parties. Your safety data stays yours.</p>
       </div>
       <div class="privacy-card reveal">
         <h4><span style="color:var(--orange);">👤</span> No account required</h4>
@@ -750,13 +716,11 @@
   </div>
 </section>
 
-<!-- CTA -->
 <section class="cta-section" id="download">
   <div class="cta-glow"></div>
   <div class="container" style="position:relative;">
-    <div class="free-badge">Free forever</div>
     <h2 class="section-title reveal">Stay aware.<br>Arrive safe.</h2>
-    <p class="reveal">Road safety should never come at a cost. Download Proxar free on the App Store today.</p>
+    <p class="reveal">Real-time proximity alerts for drivers and cyclists. Download Proxar on the App Store today.</p>
     <div class="reveal">
       <a href="#" class="apple-badge">
         <svg width="28" height="28" viewBox="0 0 24 24" fill="black"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/></svg>
@@ -769,19 +733,17 @@
   </div>
 </section>
 
-<!-- FOOTER -->
 <footer>
   <a href="#" class="footer-logo">Prox<span>ar</span></a>
   <div class="footer-links">
-    <a href="#">Privacy Policy</a>
-    <a href="#">Support</a>
-    <a href="#">Contact</a>
+    <a href="/privacy.html">Privacy Policy</a>
+    <a href="mailto:hello@proxar.io">Support</a>
+    <a href="mailto:hello@proxar.io">Contact</a>
   </div>
   <div class="footer-copy">© 2026 Across Borders LLC. All rights reserved.</div>
 </footer>
 
 <script>
-  // Custom cursor
   const cursor = document.getElementById('cursor');
   const ring = document.getElementById('cursorRing');
   let mouseX = 0, mouseY = 0, ringX = 0, ringY = 0;
@@ -801,7 +763,6 @@
   }
   animateRing();
 
-  // Scroll reveal
   const reveals = document.querySelectorAll('.reveal');
   const observer = new IntersectionObserver(entries => {
     entries.forEach((entry, i) => {
